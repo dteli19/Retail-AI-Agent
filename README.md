@@ -4,6 +4,8 @@ An agentic AI system that answers natural language questions about retail data �
 
 **Built with:** LangChain · Groq Llama 3 · Databricks · Streamlit
 
+🔗 [Live Streamlit App](https://retail-ai-agent-9zx9rruldn4pb5umycmvpn.streamlit.app/)
+
 ---
 
 ## 🎯 Business Impact
