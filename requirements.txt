@@ -2,9 +2,12 @@ langchain
 langchain-groq
 langchain-community
 langchain-experimental
+langchain-classic
+langchain-core
 pandas
 streamlit
 python-dotenv
 faker
 tabulate
 plotly
+databricks-sql-connector
