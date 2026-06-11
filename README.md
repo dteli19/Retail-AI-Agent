@@ -211,15 +211,3 @@ streamlit run streamlit_app.py
 | Promotions | Which promotions are giving the best ROI? |
 | Promotions | How is each marketing channel performing? |
 | Discounts | What is the impact of discounts on revenue? |
-
----
-
-## 👩‍💼 About
-
-Built by **Dhwani Teli** as a portfolio project demonstrating agentic AI architecture for analytics consulting.
-
-- MS Business Analytics — UMass Amherst, Isenberg School of Management (GPA 4.0)
-- Background in pharma and retail analytics
-- Focused on AI-powered analytics consulting
-
-[LinkedIn](https://linkedin.com/in/dhwaniteli) · [GitHub](https://github.com/dteli19)
