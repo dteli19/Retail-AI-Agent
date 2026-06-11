@@ -1,0 +1,201 @@
+customer_id,name,age,gender,region,segment,signup_date
+CUST0001,Stacy Bryant,58,M,North,At Risk,2024-03-16
+CUST0002,James Sanford PhD,33,M,South,Champions,2025-02-19
+CUST0003,Jodi Brown,61,M,West,Champions,2024-05-10
+CUST0004,Amanda Parsons,19,M,South,Loyal,2025-07-13
+CUST0005,Jonathan Huff,50,M,South,New,2025-02-20
+CUST0006,Rebecca Phillips,44,M,West,New,2025-05-28
+CUST0007,Joanne Perry,35,M,South,Lost,2026-05-21
+CUST0008,Ricky Christensen,39,F,South,Loyal,2025-05-18
+CUST0009,Kristina Lopez,66,F,North,Champions,2025-06-03
+CUST0010,Terri Carroll,42,M,East,At Risk,2023-11-16
+CUST0011,Victor Barnes,56,F,North,Lost,2026-01-04
+CUST0012,John Bennett,52,M,West,Champions,2025-04-17
+CUST0013,Anna Miller,53,F,East,New,2025-06-08
+CUST0014,Nicole Jordan,30,M,North,Loyal,2023-11-19
+CUST0015,Dr. Jessica West,67,F,North,Loyal,2026-02-20
+CUST0016,Melissa Young,24,F,East,Lost,2024-02-20
+CUST0017,Amber Brown,58,F,South,At Risk,2025-11-17
+CUST0018,Vanessa Bond,40,M,East,Champions,2024-09-22
+CUST0019,Michael Martin,56,M,South,Loyal,2026-05-24
+CUST0020,William Bryant,47,F,East,New,2025-06-14
+CUST0021,Barbara Turner,32,F,North,Loyal,2023-07-31
+CUST0022,Michael Lloyd,70,M,East,Lost,2025-10-31
+CUST0023,Yolanda Murray,35,M,South,New,2025-01-18
+CUST0024,Nancy Williams,63,F,South,Lost,2025-12-16
+CUST0025,Nicole Patterson,43,F,South,At Risk,2026-03-11
+CUST0026,Jacqueline Parks,26,M,East,New,2024-01-05
+CUST0027,Diana Mills,45,F,East,Loyal,2025-01-19
+CUST0028,Shaun Campbell,26,F,North,Champions,2026-01-23
+CUST0029,Jason Thomas,25,M,South,Lost,2023-06-25
+CUST0030,Cynthia Reid,56,M,West,Lost,2025-02-11
+CUST0031,Roy Kelly,56,F,East,New,2026-03-13
+CUST0032,Dean Marks,18,M,East,At Risk,2025-02-02
+CUST0033,Regina Robinson,25,F,West,Loyal,2025-06-25
+CUST0034,Michael Grant,47,M,East,New,2024-04-14
+CUST0035,Jacqueline Pollard,66,M,North,At Risk,2023-06-15
+CUST0036,Robert Shields,58,M,South,At Risk,2024-08-27
+CUST0037,James Brown,66,M,North,New,2025-06-02
+CUST0038,Anna Vega,38,F,North,Champions,2024-08-22
+CUST0039,Morgan Garcia,41,F,South,Champions,2024-06-19
+CUST0040,Holly Hunt,33,M,North,Lost,2025-10-15
+CUST0041,Benjamin Pham,70,M,South,Loyal,2025-03-12
+CUST0042,Douglas Acosta,60,F,South,At Risk,2025-03-29
+CUST0043,John Owens,51,F,South,New,2025-06-11
+CUST0044,David Ellis,66,M,East,Lost,2024-03-04
+CUST0045,James Henry,60,F,West,New,2026-05-10
+CUST0046,Taylor White,46,M,South,Loyal,2025-07-21
+CUST0047,Randall Gould,22,F,North,New,2024-04-17
+CUST0048,Allison Davis,53,M,South,Champions,2023-11-22
+CUST0049,Emma Smith,22,M,South,Champions,2026-05-20
+CUST0050,Bryan Tyler,20,F,North,New,2026-03-30
+CUST0051,Kathleen Yang,33,F,West,Loyal,2024-11-15
+CUST0052,William Clayton,52,M,West,Loyal,2025-10-29
+CUST0053,Tammy Ortiz,68,F,West,Loyal,2024-01-24
+CUST0054,Christina Torres,24,M,West,At Risk,2024-12-22
+CUST0055,Jessica Hart,45,F,West,Champions,2026-03-19
+CUST0056,Eric Wallace,61,M,North,Lost,2023-12-28
+CUST0057,Richard Goodman,64,F,North,Loyal,2025-09-02
+CUST0058,Makayla Carter,30,M,West,Loyal,2024-10-10
+CUST0059,Tammy Carlson,45,M,East,Lost,2024-10-31
+CUST0060,Joseph Martinez,33,M,West,New,2025-05-29
+CUST0061,Jordan Carter,24,M,North,Champions,2025-02-18
+CUST0062,William Orr,66,M,South,Lost,2023-08-05
+CUST0063,Ashley Young,49,F,South,Lost,2024-04-12
+CUST0064,Brenda Camacho,21,M,West,Champions,2023-09-27
+CUST0065,Kevin Martin,42,F,West,At Risk,2026-06-05
+CUST0066,Nicole Nguyen,45,F,South,Loyal,2024-01-25
+CUST0067,Rachel Washington,36,M,North,New,2025-09-03
+CUST0068,Mason Jones,65,M,East,Champions,2025-06-15
+CUST0069,Raven Mathews,21,F,South,Champions,2025-11-06
+CUST0070,Timothy Miller,50,M,South,Champions,2025-02-24
+CUST0071,Rachael Henderson,56,M,South,Lost,2023-10-07
+CUST0072,Crystal Woodard,25,M,North,New,2025-05-05
+CUST0073,John Robertson,23,F,East,At Risk,2026-03-05
+CUST0074,Timothy Price,31,F,South,At Risk,2024-01-26
+CUST0075,Juan Roberts,43,M,East,Lost,2025-09-26
+CUST0076,Kevin Larson,38,M,North,Lost,2024-05-24
+CUST0077,Michelle Choi,57,M,North,New,2025-01-05
+CUST0078,Dawn Torres,31,F,South,At Risk,2025-08-02
+CUST0079,Mr. Timothy Lawrence,22,M,East,At Risk,2024-04-10
+CUST0080,Denise Mercado,28,F,East,New,2025-05-22
+CUST0081,Courtney Briggs,69,M,East,Champions,2024-08-08
+CUST0082,Jennifer Singleton,26,F,North,Champions,2024-06-29
+CUST0083,Heather Flynn,65,M,East,At Risk,2024-06-08
+CUST0084,Paul Chen,56,M,East,Loyal,2025-02-21
+CUST0085,Jodi Lawrence,61,F,West,At Risk,2024-02-24
+CUST0086,Suzanne Kelley,21,M,West,At Risk,2024-07-14
+CUST0087,Robert Pitts,20,M,East,Loyal,2023-08-23
+CUST0088,Jennifer Cox,58,F,South,Lost,2025-12-08
+CUST0089,Sharon Glover,53,F,North,Champions,2024-08-01
+CUST0090,Benjamin Turner,22,M,North,At Risk,2023-08-04
+CUST0091,Jacob Henry,55,M,West,Loyal,2023-10-05
+CUST0092,Kim Garrett,20,F,East,Champions,2023-11-29
+CUST0093,Kevin Alexander,40,M,South,Champions,2026-03-20
+CUST0094,Sean Bartlett,40,F,South,Loyal,2024-03-07
+CUST0095,Joseph Brown,28,M,West,Champions,2025-09-24
+CUST0096,Sarah Davis,29,F,West,Loyal,2026-06-09
+CUST0097,Corey Oneal,35,M,North,Lost,2026-03-28
+CUST0098,David Gray,20,F,South,Loyal,2025-04-04
+CUST0099,Alisha Reid,70,F,East,At Risk,2025-01-08
+CUST0100,Elizabeth Stokes,70,M,South,Champions,2025-08-08
+CUST0101,Paul Morgan,60,M,West,At Risk,2024-10-20
+CUST0102,Adam Townsend,35,M,East,At Risk,2025-04-11
+CUST0103,Patricia Edwards,59,F,East,Champions,2025-08-28
+CUST0104,Shelley Wolf,25,F,South,New,2023-09-08
+CUST0105,Scott Daniels,34,M,North,New,2024-10-03
+CUST0106,Brian Chang,45,F,East,Lost,2024-08-12
+CUST0107,Michele Lopez,56,M,West,New,2025-03-22
+CUST0108,John Ramos,30,F,North,Lost,2025-05-08
+CUST0109,Stephen Daniels,18,M,East,Lost,2025-11-26
+CUST0110,William Bennett,22,F,East,Champions,2025-04-20
+CUST0111,Brian Landry,64,F,East,Lost,2025-10-07
+CUST0112,Kenneth Norman,38,F,East,New,2023-06-25
+CUST0113,Kevin Hicks,26,M,West,Lost,2026-03-23
+CUST0114,Mary Vazquez,61,M,East,Lost,2023-09-01
+CUST0115,Michael Velez,53,M,East,At Risk,2025-07-31
+CUST0116,Mary Everett,31,F,East,Lost,2024-10-04
+CUST0117,Samuel Ramos,46,F,South,New,2026-02-02
+CUST0118,Brian Smith MD,48,M,North,At Risk,2024-01-20
+CUST0119,Cynthia Edwards,50,F,North,Loyal,2024-03-06
+CUST0120,Julia Cooper,61,F,South,Loyal,2024-10-16
+CUST0121,Grace Love,27,M,North,Loyal,2026-05-13
+CUST0122,Steve Whitehead,48,M,West,Lost,2025-05-31
+CUST0123,James Fischer,58,M,West,Lost,2024-05-27
+CUST0124,James Green,43,M,South,Champions,2024-09-22
+CUST0125,Michelle Anderson,66,M,West,Loyal,2025-02-23
+CUST0126,Allison Clark,29,F,North,New,2026-05-15
+CUST0127,Lori Martinez,33,M,West,Loyal,2023-07-12
+CUST0128,Jennifer Alexander,69,F,East,Lost,2023-08-25
+CUST0129,Eric Hubbard,57,F,West,Loyal,2023-06-26
+CUST0130,Dr. Antonio Montgomery,65,F,West,At Risk,2026-02-07
+CUST0131,Thomas Rollins,66,M,East,New,2025-07-28
+CUST0132,Mary Berry,49,M,East,Lost,2024-08-07
+CUST0133,Jesse Roberts,22,F,South,At Risk,2025-07-15
+CUST0134,Connor Wade,39,F,North,Loyal,2024-06-14
+CUST0135,Scott Williams,27,M,West,Loyal,2024-03-28
+CUST0136,Adam Fritz,63,M,North,Lost,2025-10-25
+CUST0137,Mary Hernandez,44,F,West,Lost,2024-12-26
+CUST0138,Patricia Kelly,21,M,West,Lost,2026-03-30
+CUST0139,Antonio Carter,67,M,West,Lost,2025-08-08
+CUST0140,Joan Green,18,F,East,Lost,2024-11-14
+CUST0141,Kayla Bond,44,M,West,Loyal,2024-05-11
+CUST0142,Edward Williams,35,F,West,Champions,2024-12-30
+CUST0143,Michael Brady,42,F,West,Loyal,2024-12-12
+CUST0144,William Contreras,47,M,North,Lost,2025-01-23
+CUST0145,Alyssa Mendoza,55,M,North,Lost,2024-05-08
+CUST0146,Mr. Tyler Norton,26,F,South,Champions,2026-02-03
+CUST0147,Melissa Adams,34,F,East,Loyal,2025-08-10
+CUST0148,Gary Pham,47,F,East,Lost,2023-10-04
+CUST0149,Charlene Brooks,35,F,East,Champions,2026-06-02
+CUST0150,Courtney Jensen,48,M,North,At Risk,2024-03-05
+CUST0151,David Jimenez,32,M,North,Champions,2024-07-29
+CUST0152,Katie Diaz,33,M,North,New,2023-10-19
+CUST0153,Amy Meyers,27,M,South,Lost,2025-06-04
+CUST0154,Tiffany King,60,M,South,Lost,2023-11-22
+CUST0155,Gail Smith,62,F,East,Loyal,2026-05-29
+CUST0156,Curtis Woods,56,M,South,At Risk,2026-05-01
+CUST0157,Melanie Kelley,24,M,East,New,2023-10-13
+CUST0158,Joseph Daugherty,61,F,West,Loyal,2025-08-14
+CUST0159,David Welch,22,M,North,At Risk,2025-11-04
+CUST0160,Andrew Hughes,61,M,North,At Risk,2025-11-19
+CUST0161,Edward Miller,52,F,East,Champions,2025-12-29
+CUST0162,Karen Arnold,50,F,North,Lost,2025-09-19
+CUST0163,Alison Mcdonald,70,F,North,Lost,2026-02-05
+CUST0164,Melissa Brown,41,F,South,Lost,2024-11-11
+CUST0165,Gary Hunter,29,F,West,Lost,2025-11-21
+CUST0166,Andrew Thompson,45,F,East,Loyal,2024-08-24
+CUST0167,Kathy Palmer,23,F,West,Loyal,2024-08-09
+CUST0168,Megan Owens,66,F,West,At Risk,2023-10-08
+CUST0169,Bridget Berry,19,F,East,Loyal,2023-11-04
+CUST0170,Matthew Russell,49,M,East,At Risk,2025-07-28
+CUST0171,Shawn Logan,39,F,East,New,2025-04-25
+CUST0172,Bob Myers,18,M,North,Loyal,2025-12-08
+CUST0173,Brian Wu,64,F,West,New,2024-06-12
+CUST0174,Vickie Johnson,66,M,West,Lost,2024-01-29
+CUST0175,James Murillo,46,M,North,At Risk,2025-12-08
+CUST0176,Jared Vasquez,32,F,South,At Risk,2025-02-05
+CUST0177,Robert Jones,60,F,West,New,2023-11-29
+CUST0178,Nicole Simmons,51,F,West,New,2025-05-18
+CUST0179,Peter Gonzales,39,F,West,At Risk,2025-03-29
+CUST0180,John Petersen,37,F,South,Champions,2023-12-10
+CUST0181,Steven Smith,64,M,East,Champions,2024-03-27
+CUST0182,Monica Greer,65,M,South,Loyal,2024-10-07
+CUST0183,Amy Rodgers,65,F,East,New,2024-08-16
+CUST0184,Keith Keller,66,F,North,Loyal,2024-01-13
+CUST0185,Brandy Garcia,36,M,East,Loyal,2026-04-21
+CUST0186,Melissa Christensen,37,M,South,At Risk,2025-07-23
+CUST0187,Jeffrey Shelton,20,M,East,Loyal,2024-04-19
+CUST0188,Timothy Morris,58,F,North,Champions,2024-12-04
+CUST0189,Destiny Munoz,54,F,West,Lost,2024-10-15
+CUST0190,Jessica Moore,46,F,South,Champions,2024-01-24
+CUST0191,Alicia Reed,34,F,North,Champions,2024-09-03
+CUST0192,Mr. James Curry,43,F,North,New,2023-08-10
+CUST0193,Laura Williamson,58,M,South,Loyal,2025-03-21
+CUST0194,Jaclyn Wright,69,F,North,Loyal,2024-02-11
+CUST0195,Christian Munoz,25,F,South,New,2025-03-11
+CUST0196,David Brown,42,F,West,At Risk,2023-09-08
+CUST0197,Jeremy Bryan,55,F,East,New,2023-08-15
+CUST0198,Victoria Gordon,57,M,North,Loyal,2025-04-21
+CUST0199,Carolyn Mendoza,58,M,East,Champions,2026-04-14
+CUST0200,Scott Owen,28,M,South,New,2023-07-30
