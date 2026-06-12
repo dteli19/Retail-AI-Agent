@@ -2,12 +2,12 @@ import pandas as pd
 from langchain.tools import tool
 from databricks_connector import run_query
 
+
 def query_to_df(query: str) -> pd.DataFrame:
     columns, rows = run_query(query)
     if not rows:
         return pd.DataFrame(columns=columns)
-    # Convert Row objects to plain tuples if needed
-    plain_rows = [tuple(r) if not isinstance(r, tuple) else r for r in rows]
+    plain_rows = [tuple(str(v) if v is not None else '' for v in r) for r in rows]
     return pd.DataFrame(plain_rows, columns=columns)
 
 
@@ -25,7 +25,7 @@ def inspect_data(dataset_name: str) -> str:
 
     df = query_to_df(f"SELECT * FROM retail_agent.{dataset_name} LIMIT 5")
     count_df = query_to_df(f"SELECT COUNT(*) as total FROM retail_agent.{dataset_name}")
-    total = count_df['total'][0]
+    total = count_df['total'].iloc[0] if len(count_df) > 0 else 0
 
     return f"""
 Dataset: {dataset_name}
@@ -48,7 +48,6 @@ def query_data(query: str) -> str:
     - 'total revenue by category'
     - 'count of customers by segment'
     - 'top 5 stores by total sales'
-    - 'average discount percentage by channel'
     - 'monthly revenue trend'
     - 'gender analysis'
     - 'at risk customers by region'
@@ -174,8 +173,9 @@ def query_data(query: str) -> str:
                 GROUP BY region
                 ORDER BY at_risk_count DESC
             """)
-            total = query_to_df("SELECT COUNT(*) as total FROM retail_agent.customers WHERE segment = 'At Risk'")
-            return f"At Risk customers by region:\n{df.to_string()}\nTotal at risk: {total['total'][0]}"
+            total_df = query_to_df("SELECT COUNT(*) as total FROM retail_agent.customers WHERE segment = 'At Risk'")
+            total = total_df['total'].iloc[0] if len(total_df) > 0 else 0
+            return f"At Risk customers by region:\n{df.to_string()}\nTotal at risk: {total}"
 
         else:
             return """I can analyze:
