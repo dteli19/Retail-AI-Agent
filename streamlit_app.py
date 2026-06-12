@@ -243,6 +243,14 @@ for message in st.session_state.messages:
         if "chart" in message and message["chart"] is not None:
             st.plotly_chart(message["chart"], use_container_width=True)
 
+import os
+try:
+    import streamlit as st_debug
+    st.write(f"Debug - Groq key exists: {bool(st_debug.secrets.get('GROQ_API_KEY', ''))}")
+except Exception as e:
+    st.write(f"Debug error: {str(e)}")
+st.write(f"Debug - env key exists: {bool(os.getenv('GROQ_API_KEY', ''))}")
+
 question = st.chat_input("Ask a question about your retail data...")
 
 if question:
