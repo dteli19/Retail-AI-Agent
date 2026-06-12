@@ -38,7 +38,23 @@ prompt = PromptTemplate.from_template(REACT_TEMPLATE)
 
 
 def create_agent():
-    groq_key = os.getenv("GROQ_API_KEY") or _streamlit_secrets.get("GROQ_API_KEY", "")
+    # Try all possible ways to get the Groq key
+    groq_key = None
+    
+    # Method 1: environment variable
+    groq_key = os.getenv("GROQ_API_KEY")
+    
+    # Method 2: streamlit secrets
+    if not groq_key:
+        try:
+            import streamlit as st
+            groq_key = st.secrets["GROQ_API_KEY"]
+        except Exception:
+            pass
+    
+    if not groq_key:
+        raise ValueError("GROQ_API_KEY not found in environment or Streamlit secrets")
+
     llm = ChatGroq(
         api_key=groq_key,
         model="llama-3.1-8b-instant",
@@ -62,7 +78,6 @@ def create_agent():
     )
 
     return agent_executor
-
 
 def run_agent(question: str) -> str:
     import time
