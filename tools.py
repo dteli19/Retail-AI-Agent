@@ -4,7 +4,11 @@ from databricks_connector import run_query
 
 def query_to_df(query: str) -> pd.DataFrame:
     columns, rows = run_query(query)
-    return pd.DataFrame(rows, columns=columns)
+    if not rows:
+        return pd.DataFrame(columns=columns)
+    # Convert Row objects to plain tuples if needed
+    plain_rows = [tuple(r) if not isinstance(r, tuple) else r for r in rows]
+    return pd.DataFrame(plain_rows, columns=columns)
 
 
 @tool
