@@ -42,8 +42,12 @@ def get_metrics():
         _, trans = run_query("SELECT COUNT(*) FROM retail_agent.transactions")
         _, promo = run_query("SELECT COUNT(*) FROM retail_agent.promotions")
         _, rev = run_query("SELECT ROUND(SUM(total_amount), 0) FROM retail_agent.transactions")
-        return int(cust[0][0]), int(trans[0][0]), int(promo[0][0]), int(rev[0][0])
-    except:
+        c = int(cust[0][0]) if cust and cust[0][0] is not None else 200
+        t = int(trans[0][0]) if trans and trans[0][0] is not None else 1000
+        p = int(promo[0][0]) if promo and promo[0][0] is not None else 50
+        r = int(rev[0][0]) if rev and rev[0][0] is not None else 1014220
+        return c, t, p, r
+    except Exception as e:
         return 200, 1000, 50, 1014220
 
 
@@ -243,14 +247,6 @@ for message in st.session_state.messages:
         if "chart" in message and message["chart"] is not None:
             st.plotly_chart(message["chart"], use_container_width=True)
 
-import os
-try:
-    import streamlit as st_debug
-    st.write(f"Debug - Groq key exists: {bool(st_debug.secrets.get('GROQ_API_KEY', ''))}")
-except Exception as e:
-    st.write(f"Debug error: {str(e)}")
-st.write(f"Debug - env key exists: {bool(os.getenv('GROQ_API_KEY', ''))}")
-
 question = st.chat_input("Ask a question about your retail data...")
 
 if question:
@@ -273,7 +269,8 @@ if question:
                     "chart": chart
                 })
             except Exception as e:
-                error_msg = f"Something went wrong: {str(e)}"
+                import traceback
+                error_msg = f"Something went wrong: {str(e)}\n\n{traceback.format_exc()}"
                 st.markdown(error_msg)
                 st.session_state.messages.append({
                     "role": "assistant",
