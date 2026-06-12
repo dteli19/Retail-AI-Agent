@@ -5,9 +5,14 @@ from langchain_classic.agents import AgentExecutor, create_react_agent
 from langchain_core.prompts import PromptTemplate
 from tools import inspect_data, query_data, generate_insight
 from prompts import SYSTEM_PROMPT
-import streamlit as st
 
 load_dotenv()
+
+try:
+    import streamlit as st
+    _streamlit_secrets = st.secrets
+except Exception:
+    _streamlit_secrets = {}
 
 REACT_TEMPLATE = """Answer the following questions as best you can. You have access to the following tools:
 
@@ -33,7 +38,7 @@ prompt = PromptTemplate.from_template(REACT_TEMPLATE)
 
 
 def create_agent():
-    groq_key = os.getenv("GROQ_API_KEY") or st.secrets.get("GROQ_API_KEY", "")
+    groq_key = os.getenv("GROQ_API_KEY") or _streamlit_secrets.get("GROQ_API_KEY", "")
     llm = ChatGroq(
         api_key=groq_key,
         model="llama-3.1-8b-instant",
