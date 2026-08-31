@@ -3,6 +3,13 @@ import pandas as pd
 import plotly.express as px
 from agent import run_agent
 from databricks_connector import run_query
+import os
+try:
+    import streamlit as st
+    key = st.secrets.get("GROQ_API_KEY", "NOT FOUND")
+    st.sidebar.write(f"Key prefix: {key[:8] if key else 'EMPTY'}")
+except Exception as e:
+    st.sidebar.write(f"Secret error: {str(e)}")
 
 st.set_page_config(
     page_title="Retail AI Agent",
