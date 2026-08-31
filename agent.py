@@ -56,9 +56,11 @@ def create_agent():
         raise ValueError("GROQ_API_KEY not found in environment or Streamlit secrets")
 
     llm = ChatGroq(
-        api_key=groq_key,
-        model="openai/gpt-oss-20b",
-        temperature=0
+    api_key=groq_key,
+    model="qwen/qwen3.6-27b",
+    temperature=0,
+    max_tokens=1024,
+    extra_body={"reasoning_effort": "none"}
     )
 
     tools = [inspect_data, query_data, generate_insight]
